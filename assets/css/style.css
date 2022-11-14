@@ -708,6 +708,10 @@ a.btn:active {
   .widjet {
     display: none;
   }
+
+  .btn-more {
+    padding: 5px 20px;
+  }
 }
 
 @media (max-width: 850px) {
