@@ -407,7 +407,7 @@ a {
   color: #55f3ea;
 }
 
-.personal__link:hover::before {
+.personal__link::before {
   content: '';
   position: absolute;
   bottom: -5px;
