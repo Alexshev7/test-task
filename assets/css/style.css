@@ -331,7 +331,7 @@ a {
   position: relative;
   width: 100%;
   max-width: 84%;
-  top: 755px;
+  top: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -528,7 +528,7 @@ a.btn:active {
 }
 
 .section-news {
-  margin-top: 1193px;
+  margin-top: 650px;
 }
 
 .top-section-panel {
@@ -699,10 +699,6 @@ a.btn:active {
 
   .card__item h2 {
     font-size: 20px;
-  }
-
-  .section-news {
-    margin-top: 1048px;
   }
 
   .widjet {
