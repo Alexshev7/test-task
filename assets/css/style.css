@@ -130,7 +130,16 @@ a {
   width: 16px;
   height: 16px;
   font-size: 10px;
+  transition: all 0.3s ease 0s;
+}
+
+.user__login {
   margin-left: 28px;
+}
+
+.user__icon:hover {
+  cursor: pointer;
+  fill: #55f3ea;
 }
 
 .hero__container {
