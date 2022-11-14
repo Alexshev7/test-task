@@ -328,13 +328,15 @@ a {
 
 /* cards-info */
 .cards-info {
-  position: absolute;
+  position: relative;
   width: 100%;
+  max-width: 84%;
   top: 755px;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .card__item {
