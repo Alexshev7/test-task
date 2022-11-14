@@ -351,7 +351,6 @@ a {
 .card__item {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: flex-start;
   width: 402px;
   max-width: 100%;
@@ -363,12 +362,7 @@ a {
   font-size: 40px;
   line-height: 44px;
   padding-top: 40px;
-  padding-left: 45px;
-}
-
-.card__item a {
-  margin-left: 40px;
-  margin-bottom: 35px;
+  padding-left: 40px;
 }
 
 .vectors__icon {
@@ -386,6 +380,41 @@ a {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 100%;
+}
+
+.personal-list {
+  list-style-type: none;
+  margin-top: 30px;
+}
+
+.personal__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.personal__item {
+  padding-left: 40px;
+}
+
+.personal__link {
+  position: relative;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+.personal__link:hover {
+  color: #55f3ea;
+}
+
+.personal__link:hover::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  width: 100%;
+  height: 1.5px;
+  background-color: #fff;
+  transition: width 0.35s;
 }
 
 .btn {
@@ -413,6 +442,9 @@ a.btn:active {
   color: #1d3754;
   background-color: #fff;
   z-index: 0;
+  margin-top: auto;
+  margin-left: 40px;
+  margin-bottom: 35px;
 }
 
 .online-planform {
@@ -686,6 +718,18 @@ a.btn:active {
   .card__item h2 {
     font-size: 30px;
   }
+
+  .personal__link {
+    font-size: 24px;
+  }
+
+  .personal__item {
+    padding-left: 15px;
+  }
+
+  .card__item h2 {
+    padding-left: 15px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -720,6 +764,27 @@ a.btn:active {
 
   .btn-more {
     padding: 5px 20px;
+  }
+
+  .personal__link {
+    font-size: 18px;
+  }
+
+  .personal__item {
+    padding-left: 10px;
+  }
+
+  .btn-more {
+    margin-left: 20px;
+    margin-bottom: 15px;
+  }
+
+  .card__item h2 {
+    line-height: 24px;
+  }
+
+  .personal__link {
+    line-height: 24px;
   }
 }
 
@@ -939,8 +1004,6 @@ a.btn:active {
 
   .card__item a {
     font-size: 10px;
-    margin-left: 15px;
-    margin-bottom: 13px;
   }
 
   .btn-more {
@@ -968,6 +1031,14 @@ a.btn:active {
     transform: translateY(0px);
   }
 
+  .personal__item:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  .personal-list {
+    margin-top: 10px;
+  }
+
   .hero__container {
     display: flex;
     flex-direction: column;
@@ -981,7 +1052,7 @@ a.btn:active {
   .user__icon {
     position: absolute;
     top: 22px;
-    left: 0;
+    left: 23px;
   }
 
   .hero-notice {
@@ -1152,6 +1223,10 @@ a.btn:active {
   .main__title {
     font-size: 20px;
     line-height: 28px;
+  }
+
+  .personal__link {
+    line-height: 15px;
   }
 }
 
