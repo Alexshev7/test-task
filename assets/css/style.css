@@ -193,16 +193,26 @@ a {
 .widjet .user__icon,
 .watch__icon,
 .en__icon {
-  fill: #fff;
   width: 32px;
   height: 32px;
   margin: 0;
   padding: 0;
 }
 
-.watch__icon,
+.search__icon {
+  fill: #fff;
+}
+
+.watch__icon {
+  fill: #b9d8fb;
+}
+
 .en__icon {
   fill: #b9d8fb;
+}
+
+.widjet .user__icon {
+  fill: #fff;
 }
 
 .list__item:not(:last-child) {
@@ -228,10 +238,10 @@ a {
   position: absolute;
   height: 2px;
   width: 100%;
-  background: #fff;
   border-radius: 9px;
   opacity: 1;
   left: 0;
+  background-color: #fff;
   transform: rotate(0deg);
   transition: 0.25s ease-in-out;
 }
