@@ -328,6 +328,7 @@ a {
   background-color: #fff;
   z-index: 1;
   transition: all 0.3s ease 0s;
+  cursor: pointer;
 }
 
 .circle-widjet:hover {
@@ -739,6 +740,17 @@ a.btn:active {
 
   .card__item h2 {
     padding-left: 15px;
+  }
+}
+
+@media (max-width: 1405px) {
+  .header__menu {
+    margin-right: 20px;
+    margin-left: 85px;
+  }
+  .logo-text {
+    margin-left: 10px;
+    max-width: 125px;
   }
 }
 
